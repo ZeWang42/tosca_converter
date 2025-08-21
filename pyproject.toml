@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tosca-to-k8s"
+version = "0.1.0"
+description = "Convert TOSCA service templates into Kubernetes manifests"
+requires-python = ">=3.8"
+dependencies = [
+    "pyyaml",
+]
+
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["tosca_to_k8s"]
+
